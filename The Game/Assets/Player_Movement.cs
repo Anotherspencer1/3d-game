@@ -17,7 +17,7 @@ public class Player_Movement : MonoBehaviour
     public float moveSpeed = 0f;
     public float maxSpeed = 6f;
     public float gravity = -9.81f;
-    public float jumpHeight = 3f;
+    public float jumpHeight = 2f;
     public float accelerationSpeed = 20f;
     public float decelerationSpeed = 30f;
     public float direction_face_x = 0f;
@@ -47,7 +47,6 @@ public class Player_Movement : MonoBehaviour
     void OnMovement(InputValue value)
     {
         inputVector = value.Get<Vector2>();
-        
     }
     
     // Update is called once per frame
@@ -242,7 +241,6 @@ public class Player_Movement : MonoBehaviour
             //yield return new WaitForSeconds(1f);
         }
             //last_direction = inputVector;
-
-        
     }
+
  }
